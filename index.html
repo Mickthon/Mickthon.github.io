@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>Mickthon's Portfolio</title>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+    <!-- UIkit JS -->
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <link rel="apple-touch-icon" type="image/png" href="img/favicon_180x180.png">
+    <link rel="icon" type="image/png" href="img/favicon_192x192.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+      <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
+        <div class="uk-navbar-right">
+          <ul class="uk-navbar-nav">
+            <li>
+              <a href="https://mickthon.hatenablog.com/" target="_blank">Blog</a>
+            </li>
+            <li>
+              <a uk-icon="menu"></a>
+              <div class="uk-navbar-dropdown">
+                <ul class="uk-nav uk-navbar-dropdown-nav">
+                  <li><a href="#aboutme" uk-scroll>About Me</a></li>
+                  <li><a href="#skills" uk-scroll>Skills</a></li>
+                  <li><a href="#history" uk-scroll>History</a></li>
+                  <li><a href="#products" uk-scroll>Products</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <header class="uk-background-primary uk-padding uk-light" id="aboutme">
+      <div class="uk-text-center">
+        <img class="uk-margin-top uk-border-circle" data-src="img/favicon_400x400.jpg" width="200" height="200" uk-img>
+        <article class="uk-article uk-margin-top uk-margin-bottom uk-child-width-expand@m">
+          <h3 class="uk-article-title">Mickthon</h3>
+          <p class="uk-article-lead uk-text-large">Mikito Urata</p>
+          <p class="uk-article-meta">2002年1月8日生まれ</p>
+          <p class="uk-text-lead uk-text-bold uk-text-middle">
+            研究ではSfMとか点群とか / 最近はNFTとか
+          </p>
+        </article>
+        <div class="uk-flex uk-flex-center uk-flex-middle">
+          <a href="https://github.com/mickthon" target="_blank" uk-icon="github" class="uk-margin-left uk-icon-button"></a>
+          <a href="https://www.facebook.com/MikitoUrata" target="_blank" uk-icon="facebook" class="uk-margin-left uk-icon-button"></a>
+          <a href="https://www.instagram.com/mikitourata/" target="_blank" uk-icon="instagram" class="uk-margin-left uk-icon-button"></a>
+        </div>
+      </div>
+    </header>
+
+    <div id="skills">
+      <h2 class="uk-heading-line uk-text-center uk-padding-large"><span>Skills</span></h2>
+      <!-- スキル -->
+      <div class="uk-panel uk-padding uk-padding-remove-top uk-padding-remove-bottom">
+        <ul uk-accordion="multiple: true">
+          <li>
+            <a class="uk-accordion-title">Python <i class="devicon-python-plain"></i></a>
+            <div class="uk-accordion-content">
+              <span class="uk-label">PyCharm</span>
+              <span class="uk-label uk-label-packageManager">Pip</span>
+              <span class="uk-label uk-label-framework">Django</span>
+              <span class="uk-label uk-label-framework">Flask</span>
+              <span class="uk-label uk-label-framework">Tensorflow</span>
+              <span class="uk-label uk-label-framework">Keras</span>
+              <hr>
+              <p>作品例</p>
+              <a href="https://github.com/Mickthon/FacingStraightCam">FacingStraightCam(顔、視線補正仮想カメラ)</a><br/>
+              <a href="https://github.com/Mickthon/ClassNote">電子版クラス日誌(webアプリ)</a>
+            </div>
+          </li>
+          <li>
+            <a class="uk-accordion-title">JavaScript <i class="devicon-javascript-plain"></i></a>
+            <div class="uk-accordion-content">
+              <span class="uk-label">WebStorm</span>
+              <span class="uk-label uk-label-packageManager">Yarn</span>
+              <span class="uk-label uk-label-framework">Vue.js</span>
+              <hr>
+              <p>作品例</p>
+              <a href="https://github.com/Mickthon">おつりチャージャー(おつりを電子マネーに変換)</a>
+            </div>
+          </li>
+          <li>
+            <a class="uk-accordion-title">C# <i class="devicon-csharp-plain"></i></a>
+            <div class="uk-accordion-content">
+              <span class="uk-label">Visual Studio</span>
+              <span class="uk-label uk-label-packageManager">NuGet</span>
+              <span class="uk-label uk-label-framework">WPF</span>
+              <span class="uk-label uk-label-framework">Xamarin</span>
+              <hr>
+              <p>作品例</p>
+              <a href="https://github.com/Mickthon">FacingStraightCam(Windows GUI)</a>
+            </div>
+          </li>
+          <li>
+            <a class="uk-accordion-title">Kotlin <i class="devicon-kotlin-plain"></i></a>
+            <div class="uk-accordion-content">
+              <span class="uk-label">IntelliJ IDEA</span>
+              <span class="uk-label">Android Studio</span>
+              <span class="uk-label uk-label-packageManager">gradle</span>
+              <span class="uk-label uk-label-framework">Anko</span>
+              <span class="uk-label uk-label-framework">Spring Boot</span>
+              <hr>
+              <p>作品例</p>
+              <a href="https://github.com/Mickthon">既読付けないんger(通知監視アプリ)</a>
+            </div>
+          </li>
+          <li>
+            <a class="uk-accordion-title">Go <i class="devicon-go-plain"></i></a>
+            <div class="uk-accordion-content">
+              <span class="uk-label">Visual Studio</span>
+              <span class="uk-label uk-label-packageManager">GoGet</span>
+              <span class="uk-label uk-label-framework">Gin</span>
+               <hr>
+               <p>作品例</p>
+               <a href="https://github.com/Mickthon">競プロ</a>
+            </div>
+          </li>
+          <li>
+            <a class="uk-accordion-title">C++ <i class="devicon-cplusplus-plain"></i></a>
+            <div class="uk-accordion-content">
+              <p>研究インターンで使用 / IntelliJ IDEA</p>
+              <hr>
+            </div>
+          </li>
+          <li>
+            <a class="uk-accordion-title">SQL(NoSQL) <i class="devicon-mysql-plain"></i></a>
+            <div class="uk-accordion-content">
+              <span class="uk-label uk-label-packageManager">MySQL</span>
+              <span class="uk-label uk-label-packageManager">PostgreSQL</span>
+              <span class="uk-label uk-label-packageManager">mongoDB</span>
+              <span class="uk-label uk-label-packageManager">SQLite</span>
+            </div>
+          </li>
+          <li>
+            <a class="uk-accordion-title">English </a>
+            <div class="uk-accordion-content">
+              <p>TOEIC 890点</p>
+              <hr>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="history">
+      <h2 class="uk-heading-line uk-text-center uk-padding-large"><span>History</span></h2>
+    <div class="uk-panel uk-padding uk-padding-remove-top">
+      <h3 class="uk-heading-bullet">2017</h3>
+      <div>
+        <ul class="uk-list uk-list-divider">
+          <li>国立豊田工業高等専門学校 入学</li>
+          <li><span class="uk-label uk-label-danger">優勝</span> 第55回全国高等専門学校ハンドボール選手権大会出場</li>
+        </ul>
+      </div>
+      <h3 class="uk-heading-bullet">2018</h3>
+      <div>
+        <ul class="uk-list uk-list-divider">
+          <li><span class="uk-label uk-label-danger">優勝</span> 第56回東海地区国立高等専門学校体育大会ハンドボール選手権大会出場</li>
+          <li>NIT Toba Hackathon出場</li>
+          <li>AFS交換留学の準備を始める</li>
+          <li>高専カンファレンスin名古屋 2018参加</li>
+          <li>Yahoo Hack U 2018 NAGOYA参加</li>
+        </ul>
+      </div>
+      <h3 class="uk-heading-bullet">2019</h3>
+      <div>
+        <ul class="uk-list uk-list-divider">
+          <li><span class="uk-label uk-label-warning">敢闘賞</span>  第1回システム創成コンテスト出場</li>
+          <li>アメリカの公立高校 Silver Stage High Schoolへ1年間交換留学</li>
+          <li><span class="uk-label uk-label-framework">入賞</span>	Dayton Dustdevils XC Meet出場</li>
+        </ul>
+      </div>
+      <h3 class="uk-heading-bullet">2020</h3>
+      <div>
+        <ul class="uk-list uk-list-divider">
+          <li><span class="uk-label uk-label-packageManager">優秀賞</span> WNC Hackathon出場</li>
+          <li>Silver Stage High Schoolを早期卒業しWestern Nevada Collegeへ飛び入学</li>
+          <li>国立豊田工業高等専門学校 復学</li>
+          <li>TOEIC 890点取得</li>
+        </ul>
+      </div>
+      <h3 class="uk-heading-bullet">2021</h3>
+      <div>
+        <ul class="uk-list uk-list-divider">
+          <li><span class="uk-label uk-label-packageManager">優秀賞</span> Yahoo Hack U 2020 Online Vol.5出場</li>
+          <li>北海道大学 大学院情報科学院 ディジタル幾何処理工学研究室にて研究インターン参加</li>
+        </ul>
+      </div>
+      <h3 class="uk-heading-bullet">2023</h3>
+      <div>
+        <ul class="uk-list uk-list-divider">
+          <li>国立豊田工業高等専門学校 情報工学科を卒業見込み</li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div id="products">
+        <h2 class="uk-heading-line uk-text-center uk-padding-large"><span>Products</span></h2>
+      <!-- 作ったもの -->
+      <div class="uk-panel uk-padding uk-padding-remove-top">
+        <ul uk-accordion="multiple: true">
+          <li>
+            <a class="uk-accordion-title">FacingStraightCam</a>
+            <div class="uk-accordion-content">
+              <h4>視線や顔向き補正を自動で行ってくれる仮想カメラ</h4>
+              <hr>
+              <p>Yahoo Open Hack U 2020 Online Vol.5にて優秀賞をもらった作品。30秒間画面をタップしてランダムに出現するおにぎりせんべいをシューティングしてスコアを競うことができる。</p>
+              <p>使用技術: Python / Tensorflow</p>
+              <p>関連リンク</p>
+              <a href="https://hacku.yahoo.co.jp/hacku2020online5/" target="_blank">発表作品サイト</a><br>
+              <a href="https://www.youtube.com/watch?v=KG09AJPwhqo&t=1846s" target="_blank">発表作品プレゼンテーション</a>
+              <a href="https://github.com/Mickthon" target="_blank">ソースコード</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </div>
+
+    <footer class="uk-background-muted uk-text-center uk-padding-large">
+      <p>powered by <span uk-icon="uikit"></span>UIKit3</p>
+    </footer>
+  </body>
+</html>
